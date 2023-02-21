@@ -1,0 +1,113 @@
+@media screen and (min-width: 1400px) {
+  .second .container {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 13px;
+  }
+  .first {
+    height: auto;
+    padding: 50px 0;
+  }
+  .first .container h1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .second .container .card {
+    width: 300px;
+    height: 350px;
+  }
+  .second .container .card .top {
+    height: 50%;
+  }
+  .second .container .card1 {
+    padding: 15px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 20px 0;
+  }
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  nav {
+    border-bottom: 1px solid #002d5b;
+  }
+  nav .container .reg_btn {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  nav .container .humb_open {
+    display: block !important;
+    font-size: 22px;
+    color: #002d5b;
+  }
+  nav .container .menu.active {
+    left: 0;
+  }
+  nav .container .menu {
+    position: absolute;
+    background-color: #002d5b;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    left: -100%;
+    top: 0;
+    padding: 60px 0;
+    border-top: 2px solid white;
+  }
+  nav .container .menu .humb_close {
+    display: block;
+  }
+  nav .container .menu li,
+  nav .container .menu a {
+    color: aliceblue;
+  }
+  .first .container h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .second .container .card {
+    width: 250px;
+    height: 350px;
+  }
+  .second .container .card .top {
+    height: 45%;
+  }
+  .second .container .card1 {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 580px) {
+  header .container .left {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .container .left h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .first .container .learn_more {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+  .second .container .card {
+    width: 300px;
+    height: 400px;
+  }
+  .second .container .card .top {
+    height: 55%;
+  }
+}/*# sourceMappingURL=media.css.map */
