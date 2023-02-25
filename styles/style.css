@@ -275,20 +275,37 @@ nav .container .reg_btn {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 60px 0;
 }
 .forth .container .flex .card {
   width: 280px;
-  padding: 15px;
+  height: 230px;
   text-align: center;
   transition: all ease 0.4s;
-  border-right: 4px dotted #fff;
-  border-bottom: 4px dotted #fff;
+  position: relative;
+  z-index: 1344;
+  background: #fff;
+  padding: 35px 15px;
 }
-.forth .container .flex .card:hover {
-  border-right: 7px dotted rgba(255, 101, 106, 0.4196078431);
-  border-bottom: 7px dotted rgba(255, 101, 106, 0.4431372549);
-  padding-right: 30px;
-  padding-bottom: 30px;
+.forth .container .flex .card .box {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.4s;
+  border-top: none;
+  border-left: none;
+  border-right: 10px dotted #fff;
+  border-bottom: 10px dotted #fff;
+}
+.forth .container .flex .card:hover .box {
+  transform: translate(30px, 30px);
+  border-top: none;
+  border-left: none;
+  border-right: 10px dotted rgba(255, 101, 106, 0.4549019608);
+  border-bottom: 10px dotted rgba(255, 101, 106, 0.4039215686);
 }
 .forth .container .flex .card i {
   font-size: 50px;
