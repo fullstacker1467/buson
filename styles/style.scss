@@ -117,10 +117,11 @@ nav {
 }
 
 .first {
-  height: 80vh;
-  background: linear-gradient(to left,rgba(255, 255, 255, 0.386),white),url('https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/getty_1127657173_g6urbu.jpg');
+  padding: 90px 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.386), white),
+    url("https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/getty_1127657173_g6urbu.jpg");
   background-size: cover;
-  
+
   .container {
     height: 100%;
     display: flex;
@@ -147,7 +148,9 @@ nav {
       padding: 16px 27px;
       border: none;
       border-radius: 5px;
-      font-size: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
       color: white;
     }
   }
@@ -173,7 +176,7 @@ nav {
       transition: all ease 0.4s;
       cursor: pointer;
       &:hover {
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;  
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         .top {
           img {
             transform: scale(1.05);
@@ -201,35 +204,37 @@ nav {
       }
     }
 
-    .card1{
+    .card1 {
       padding: 50px;
       border: #ff656a 4px solid;
       border-radius: 0;
       text-align: start;
-      transition: all ease .4s;
-      h2{
+      transition: all ease 0.4s;
+      h2 {
         font-size: 47px;
         font-weight: 600;
         color: #002d5b;
       }
 
-      .line{
+      .line {
         width: 120px;
         height: 5px;
         background: #ff656a;
         margin: 10px 0;
       }
-      p{
+      p {
         font-size: 16px;
         margin: 25px 0;
         color: #002d5b;
       }
-      &:hover{
+      &:hover {
         background: #ff656a;
-        h2,p,a{
+        h2,
+        p,
+        a {
           color: white;
         }
-        .line{
+        .line {
           background: white;
         }
       }
@@ -237,28 +242,26 @@ nav {
   }
 }
 
-.third{
-  height: 100vh;
+.third {
   padding: 70px 0;
   font-family: var(--mont);
   margin-bottom: 50px;
 
-  .container{
+  .container {
     display: flex;
+    align-items: center;
 
-    img{
+    img {
       width: 50%;
-
+      height: 100%;
     }
-    .box{
-      
-      backdrop-filter: blur(10px);
+    .box {
       padding: 80px;
-      h1{
+      h1 {
         font-size: 50px;
         color: #002d5b;
       }
-      p{
+      p {
         color: #ff656a;
         margin: 20px 0;
       }
@@ -267,8 +270,36 @@ nav {
         padding: 16px 27px;
         border: none;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2.5px;
         color: white;
+      }
+    }
+  }
+}
+
+.forth {
+  height: 100vh;
+  font-family: var(--mont);
+  .container {
+    h1 {
+      color: #002d5b;
+      font-size: 45px;
+      text-align: center;
+    }
+    .flex {
+      padding: 70px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .card{
+        width: 280px;
+        border: 2px solid red;
+        padding: 15px ;
+        i{
+          text-align: center;
+        }
       }
     }
   }

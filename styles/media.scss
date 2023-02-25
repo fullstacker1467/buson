@@ -39,6 +39,23 @@
       }
     }
   }
+
+  .third{
+    .container{
+      .box{
+        padding: 30px;
+        h1{
+          font-size: 30px;
+        }
+        p{
+          font-size: 14px;
+        }
+        .learn_more{
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -116,6 +133,20 @@
       }
     }
   }
+
+  .third{
+    .container{
+      gap: 50px;
+      flex-direction: column;
+      img{
+        width: 80%;
+      }
+      .box{
+        width: 80%;
+        padding: 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -133,7 +164,9 @@
 }
 
 @media screen and (max-width: 450px) {
+
   .first {
+    padding: 30px;
     .container {
       .learn_more {
         font-size: 15px;

@@ -28,6 +28,18 @@
     padding: 15px;
     height: 400px;
   }
+  .third .container .box {
+    padding: 30px;
+  }
+  .third .container .box h1 {
+    font-size: 30px;
+  }
+  .third .container .box p {
+    font-size: 14px;
+  }
+  .third .container .box .learn_more {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -88,6 +100,17 @@
     width: 300px;
     height: 400px;
   }
+  .third .container {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .third .container img {
+    width: 80%;
+  }
+  .third .container .box {
+    width: 80%;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 580px) {
   header .container .left {
@@ -99,6 +122,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .first {
+    padding: 30px;
+  }
   .first .container .learn_more {
     font-size: 15px;
     padding: 8px 12px;
