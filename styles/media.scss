@@ -4,6 +4,19 @@
       justify-content: space-between;
     }
   }
+  .forth{
+    .container{
+      .flex{
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 }
 
 @media screen and (max-width: 1400px) {

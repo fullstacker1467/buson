@@ -260,25 +260,86 @@ nav .container .reg_btn {
 }
 
 .forth {
-  height: 100vh;
   font-family: var(--mont);
 }
 .forth .container h1 {
   color: #002d5b;
   font-size: 45px;
   text-align: center;
+  margin-bottom: 60px;
 }
 .forth .container .flex {
-  padding: 70px 0;
+  padding: 80px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .forth .container .flex .card {
   width: 280px;
-  border: 2px solid red;
   padding: 15px;
+  text-align: center;
+  transition: all ease 0.4s;
+  border-right: 4px dotted #fff;
+  border-bottom: 4px dotted #fff;
+}
+.forth .container .flex .card:hover {
+  border-right: 7px dotted rgba(255, 101, 106, 0.4196078431);
+  border-bottom: 7px dotted rgba(255, 101, 106, 0.4431372549);
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 .forth .container .flex .card i {
-  text-align: center;
+  font-size: 50px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.forth .container .flex .card i:hover {
+  color: #ff656a;
+}
+.forth .container .flex .card h3 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+.forth .container .flex .card p {
+  font-size: 15px;
+}
+.forth .container .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.forth .container .btn .button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #fff;
+  border-radius: 2px;
+}
+.forth .container .btn .button-52::after {
+  content: "";
+  background-color: #ff656a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  border-radius: 2px;
+  transition: all ease 0.3s;
+}
+.forth .container .btn .button-52:hover::after {
+  top: 0px;
+  left: 0px;
 }/*# sourceMappingURL=style.css.map */
