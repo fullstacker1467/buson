@@ -83,7 +83,7 @@
     flex-direction: column;
     left: -100%;
     top: 0;
-    padding: 60px 0;
+    padding: 90px 0;
     border-top: 2px solid white;
   }
   nav .container .menu .humb_close {
@@ -92,6 +92,7 @@
   nav .container .menu li,
   nav .container .menu a {
     color: aliceblue;
+    font-size: 24px;
   }
   .first .container h1 {
     width: 100%;
