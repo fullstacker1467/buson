@@ -319,6 +319,8 @@ nav {
           border-bottom: 10px dotted #fff;
         }
         &:hover {
+          border-radius: 10px;
+          background: rgba(245, 245, 245, 0.68);
           .box {  
             transform: translate(30px , 30px);
             border-top: none;

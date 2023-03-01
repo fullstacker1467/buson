@@ -300,6 +300,10 @@ nav .container .reg_btn {
   border-right: 10px dotted #fff;
   border-bottom: 10px dotted #fff;
 }
+.forth .container .flex .card:hover {
+  border-radius: 10px;
+  background: rgba(245, 245, 245, 0.68);
+}
 .forth .container .flex .card:hover .box {
   transform: translate(30px, 30px);
   border-top: none;
