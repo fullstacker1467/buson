@@ -18,6 +18,42 @@
   margin: 0 auto;
 }
 
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #fff;
+  border-radius: 2px;
+  &::after {
+    content: "";
+    background-color: #ff656a;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    border-radius: 2px;
+    transition: all ease 0.3s;
+  }
+  &:hover {
+    border: #ff656a 1px solid ;
+    &::after {
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
+
 header {
   background: #002d5b;
   height: 50px;
@@ -105,14 +141,6 @@ nav {
         }
       }
     }
-
-    .reg_btn {
-      background: #ff656a;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-    }
   }
 }
 
@@ -142,16 +170,18 @@ nav {
       font-size: 70px;
       width: 50%;
     }
-
-    .learn_more {
-      background: #ff656a;
-      padding: 16px 27px;
-      border: none;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 2.5px;
+    .btn{
+      padding: 10px 20px;
       color: white;
+      transition: all linear .3s;
+      background: #ff656a;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--mont);
+      &:hover{
+        background: #f79598;
+      }
     }
   }
 }
@@ -265,16 +295,6 @@ nav {
         color: #ff656a;
         margin: 20px 0;
       }
-      .learn_more {
-        background: #ff656a;
-        padding: 16px 27px;
-        border: none;
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 2.5px;
-        color: white;
-      }
     }
   }
 }
@@ -351,40 +371,6 @@ nav {
       width: 100%;
       display: flex;
       justify-content: center;
-      .button-52 {
-        font-size: 16px;
-        font-weight: 200;
-        letter-spacing: 1px;
-        padding: 13px 20px 13px;
-        outline: 0;
-        border: 1px solid black;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        color: #fff;
-        border-radius: 2px;
-        &::after {
-          content: "";
-          background-color: #ff656a;
-          width: 100%;
-          z-index: -1;
-          position: absolute;
-          height: 100%;
-          top: 7px;
-          left: 7px;
-          border-radius: 2px;
-          transition: all ease 0.3s;
-        }
-        &:hover {
-          &::after {
-            top: 0px;
-            left: 0px;
-          }
-        }
-      }
     }
   }
 }
